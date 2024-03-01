@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfDNS", "WpfDNS\WpfDNS.csproj", "{722683E1-946D-4AC6-846C-0656E24D51CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{722683E1-946D-4AC6-846C-0656E24D51CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{722683E1-946D-4AC6-846C-0656E24D51CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{722683E1-946D-4AC6-846C-0656E24D51CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{722683E1-946D-4AC6-846C-0656E24D51CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BE20C6B9-4CEC-486F-8442-505AABBBF519}
+	EndGlobalSection
+EndGlobal
