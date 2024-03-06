@@ -5,5 +5,6 @@
         public string Name { get; set; }
         public int Speedoz { get; set; }
         public int Memory { get; set; }
+        public int Cost { get; set; }
     }
 }

@@ -1,0 +1,26 @@
+﻿<Window x:Class="WpfDNS.CpuWin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfDNS"
+        mc:Ignorable="d"
+        Title="CpuWin" Height="450" Width="800">
+    <Window.Resources>
+        <local:PriceToImageConverter x:Key="converter2"/>
+
+        <DataTemplate DataType="{x:Type local:Cpu}">
+            <StackPanel>
+                <TextBlock Text="{Binding Path=Name}"/>
+                <TextBlock Text="{Binding Path=Cost, StringFormat=Cost: {0}}"/>
+                <TextBlock Text="{Binding Path=Chastota, StringFormat=Chastota: {0}}"/>
+                <TextBlock Text="{Binding Path=TDP, StringFormat=TDP: {0}}"/>
+                <Image Height="50" Source="{Binding Cost, Converter={StaticResource converter2}}"/>
+            </StackPanel>
+        </DataTemplate>
+    </Window.Resources>
+    <StackPanel>
+        <ListBox SelectedItem="{Binding SelectedComp}" ItemsSource="{Binding SelectedComps}" />
+        <Button Content="Select" Click="Select" VerticalAlignment="Bottom"/>
+    </StackPanel>
+</Window>

@@ -4,9 +4,9 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfDNS"
+        Icon="1.jpg"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-
+        Title="Барахолка ППК" Height="450" Width="800">
     <!--<Window.Resources>
         <DataTemplate DataType="{x:Type local:Cpu}">
             <StackPanel Orientation="Horizontal">
@@ -21,12 +21,14 @@
         <DataTemplate DataType="{x:Type local:Wifi}"/>
         <DataTemplate DataType="{x:Type local:Mother}"/>
     </Window.Resources>-->
-
-
+    <Window.Resources>
+        
+    </Window.Resources>
     
     <StackPanel>
+        
         <StackPanel Orientation="Horizontal">
-            <Image ToolTip="Дальше бога нет" Height="100" Source="/1.png" VerticalAlignment="Top" Margin="20"/>
+            <Image Height="100" Source="/1.jpg" VerticalAlignment="Top" Margin="20"/>
             <Label Content="Барахолка ППК" FontSize="70" FontStyle="Italic" FontFamily="Segoe script" Height="100" VerticalAlignment="Top" Margin="20"/>
         </StackPanel>
 
@@ -34,7 +36,5 @@
             <Button Content="GPUs" Click="SelectGpu_Click"/>
             <Button Content="RAMs" Click="SelectRam_Click"/>
             <Button Content="SSDs" Click="SelectSsd_Click"/>
-            <Button Content="WIFIs" Click="SelectWifi_Click"/>
-            <Button Content="MOTHERs" Click="SelectMother_Click"/>
     </StackPanel>
 </Window>
